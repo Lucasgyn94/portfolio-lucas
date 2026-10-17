@@ -29,14 +29,14 @@ export const HeroSection = styled.section`
     @media (max-width: 900px) {
         width: calc(100% - 3rem);
         min-height: auto;
-        grid-template-columns: 1fr;
-        gap: 3rem;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 2.5rem;
         padding: 4rem 0 3rem;
     }
 
     @media (max-width: 480px) {
         width: calc(100% - 2rem);
-        gap: 2.5rem;
+        gap: 2rem;
         padding: 3rem 0;
     }
 `;
@@ -45,6 +45,7 @@ export const HeroSection = styled.section`
 
 export const HeroContent = styled.div`
     min-width: 0;
+
 `;
 
 export const HeroLabel = styled.p`
@@ -88,9 +89,13 @@ export const HeroDescription = styled.p`
 
 export const HeroActions = styled.div`
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
     gap: 0.875rem;
+
+    @media (max-width: 480px) {
+        gap: 0.625rem;
+    }
 `;
 
 const ActionButton = styled.a`
@@ -187,9 +192,12 @@ export const DevelopmentWorkspace = styled.div`
     @media (max-width: 900px) {
         justify-self: center;
     }
+
+    @media (max-width: 480px) {
+        min-height: 0;
+        border-radius: 16px;
+    }
 `;
-
-
 
 export const WindowBar = styled.div`
     min-height: 54px;

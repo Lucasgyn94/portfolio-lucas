@@ -39,8 +39,8 @@ const codeLines = [
     <> focus: [</>,
     <>
         {' '}
-        <CodeString>'web'</CodeString>, <CodeString>'backend'</CodeString>,{' '}
-        <CodeString>'automação'</CodeString>
+        <CodeString>'front-end'</CodeString>, <CodeString>'back-end'</CodeString>,{' '}
+        <CodeString>'web'</CodeString>, <CodeString>'automação'</CodeString>
     </>,
     <> ],</>,
     <>
