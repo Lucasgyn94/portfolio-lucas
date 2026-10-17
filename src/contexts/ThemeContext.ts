@@ -1,13 +1,12 @@
+import { createContext } from "react";
 
-import { createContext } from 'react'
-
-export type ThemeMode = 'dark' | 'light'
+export type ThemeMode = "dark" | "light";
 
 export interface ThemeContextData {
-  themeMode: ThemeMode
-  toggleTheme: () => void
+  themeMode: ThemeMode;
+  toggleTheme: () => void;
 }
 
 export const ThemeContext = createContext<ThemeContextData | undefined>(
   undefined,
-)
+);
